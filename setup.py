@@ -7,7 +7,7 @@ def parse_requirements(filename):
     with open(filename, encoding='utf-16') as f:
         return f.read().splitlines()
 
-setup(name='fileutils',
+setup(name='python-fileutils',
     version="0.0.3",
     license='MIT License',
     author='Ismael Nascimento',
