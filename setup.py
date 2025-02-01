@@ -1,14 +1,14 @@
+import os
+import sys
 from setuptools import setup
 from setuptools import find_packages
-
-from spedpytools import __version__
 
 def parse_requirements(filename):
     with open(filename, encoding='utf-16') as f:
         return f.read().splitlines()
 
 setup(name='fileutils',
-    version=__version__,
+    version="0.0.3",
     license='MIT License',
     author='Ismael Nascimento',
     long_description=open('README.md').read(),
