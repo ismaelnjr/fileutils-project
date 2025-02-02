@@ -131,6 +131,8 @@ def remove_signature(file_list: List[str],
                      encoding="utf-8", 
                      verbose=False,
                      verbose_text="Removendo assinatura digital"):    
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
 
     # Processa cada arquivo
     for arquivo in tqdm(file_list, desc=verbose_text, disable=not verbose):
@@ -149,7 +151,7 @@ def remove_signature(file_list: List[str],
         linhas = linhas[:i]
 
         # Salva o conteúdo modificado em um novo arquivo
-        novo_caminho_arquivo = os.path.join(output_dir, f"sem_assinatura_{arquivo}")
+        novo_caminho_arquivo = os.path.join(output_dir, f"sem_assinatura_{os.path.basename(arquivo)}")
         with open(novo_caminho_arquivo, "w", encoding=encoding) as novo_arquivo:
             novo_arquivo.writelines(linhas)
 

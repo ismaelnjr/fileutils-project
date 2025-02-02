@@ -12,7 +12,7 @@ from fileutils import organize_files
 
 class TestCase05(unittest.TestCase):
 
-    def organize_test(self):
+    def test_organize(self):
         
         organize_files(source_dir=".\\etc", 
                        destination_dir=".\\organized_files", 
