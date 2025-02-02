@@ -1,1 +1,3 @@
-from .fileutils import list_files, copy_files, unzip_files, zip_files, remove_signature, remove_files, move_files
+from .fileutils import *
+
+__version__ = '0.0.4'
