@@ -11,7 +11,7 @@ sys.path.insert(0, test_root)
 
 from fileutils.fileutils import list_files
 
-class TestFindFiles(unittest.TestCase):
+class TestCase01(unittest.TestCase):
 
     def test_list_files(self):
         

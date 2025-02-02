@@ -10,9 +10,9 @@ sys.path.insert(0, test_root)
 
 from fileutils import list_files, zip_files
 
-class TestFindFiles(unittest.TestCase):
+class TestCase03(unittest.TestCase):
 
-    def test_list_files(self):
+    def test_zip_files(self):
         
        files = list_files(source_dir=".", extensions=(".py"))
        print("Numero de arquivos encontrados:", len(files))

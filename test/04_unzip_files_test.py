@@ -10,9 +10,9 @@ sys.path.insert(0, test_root)
 
 from fileutils import unzip_files, list_files
 
-class TestFindFiles(unittest.TestCase):
+class TestCase04(unittest.TestCase):
 
-    def test_list_files(self):
+    def test_unzip_files(self):
 
        unzip_files(zip_file="arquivos.zip", extract_to="unzipped_files")
        

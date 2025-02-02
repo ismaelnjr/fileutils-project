@@ -27,14 +27,18 @@ O módulo `fileutils.py` contém as seguintes funções:
 - **Remoção de assinaturas digitais de arquivos**: `remove_signature(file_list, output_dir, sign_start="|9999|", encoding="utf-8", verbose=True)`
   - Remove assinaturas digitais de arquivos a partir de um marcador específico.
 
+- **Organização de arquivos**: `organize(source_dir, destination_dir, file_selector=default_file_selector, copy=True, verbose=True)`
+  - Organiza arquivos conforme um função seletora e move ou copia para um diretório específico.
+
 ## 🧪 Testes Unitários
 
 O projeto inclui testes unitários para validar a funcionalidade das funções. Os testes são implementados nos seguintes arquivos:
 
-- `list_files_test.py`: Testa a listagem de arquivos no diretório.
-- `copy_files_test.py`: Testa a cópia de arquivos para um diretório de destino.
-- `unzip_files_test.py`: Testa a extração de arquivos ZIP.
-- `zip_file_test.py`: Testa a criação de arquivos ZIP.
+- `01_list_files_test.py`: Testa a listagem de arquivos no diretório.
+- `02_copy_files_test.py`: Testa a cópia de arquivos para um diretório de destino.
+- `03_unzip_files_test.py`: Testa a extração de arquivos ZIP.
+- `04_zip_file_test.py`: Testa a criação de arquivos ZIP.
+- `05_organize_test.py`: Testa a organização de arquivos para um diretório de destino.
 
 Os testes utilizam `unittest` e podem ser executados com:
 

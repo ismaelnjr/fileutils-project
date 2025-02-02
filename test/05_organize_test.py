@@ -10,9 +10,9 @@ sys.path.insert(0, test_root)
 
 from fileutils import organize_files
 
-class TestFindFiles(unittest.TestCase):
+class TestCase05(unittest.TestCase):
 
-    def test_list_files(self):
+    def organize_test(self):
         
         organize_files(source_dir=".\\etc", 
                        destination_dir=".\\organized_files", 
